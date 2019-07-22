@@ -1,4 +1,5 @@
-import { NetInfo, Platform, View } from 'react-native';
+import { Platform, View } from 'react-native';
+import NetInfo from '@react-native-community/netinfo';
 
 import reactMixin from 'react-mixin';
 import Trackr from 'trackr';
@@ -11,8 +12,6 @@ import { Collection } from './Collection';
 import call from './Call';
 
 import Mixin from './components/Mixin';
-import MeteorListView from './components/ListView';
-import MeteorComplexListView from './components/ComplexListView';
 import createContainer from './components/createContainer';
 import withTracker from './components/ReactMeteorData';
 import composeWithTracker from './components/composeWithTracker';
@@ -30,8 +29,6 @@ module.exports = {
   Accounts,
   Tracker: Trackr,
   EJSON,
-  MeteorListView,
-  MeteorComplexListView,
   ReactiveDict,
   Collection,
   FSCollectionImagesPreloader:
